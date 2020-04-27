@@ -1,5 +1,6 @@
 import numpy as np
 import seaborn as sns
+import matplotlib.pyplot as plt
 
 
 def p_x_given_y(y, mus, sigmas):
@@ -32,3 +33,4 @@ if __name__ == '__main__':
 
     samples = gibbs_sampling(mus, sigmas)
     sns.jointplot(samples[:, 0], samples[:, 1])
+    plt.show()
